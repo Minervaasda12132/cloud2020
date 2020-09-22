@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zzs.springcloud.dao.PaymentMapper">
+
+  <select id="selectId" parameterType="long" resultType="com.zzs.springcloud.entities.Payment">
+       select * from payment where id=#{id}
+  </select>
+</mapper>

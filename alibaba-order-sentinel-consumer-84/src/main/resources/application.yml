@@ -1,0 +1,32 @@
+server:
+  port: 84
+spring:
+  application:
+    name: order-sentinel-consumer
+  http:
+    encoding:
+      charset: utf-8
+      force: true
+      enabled: true
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+    sentinel:
+      transport:
+        port: 8719
+        dashboard: localhost:8080
+service-url:
+  nacos-user-service: http://nacos-payment-server
+
+feign:
+  sentinel:
+    enabled: true
+    degrade:
+      rules:
+        -resource: GET:http://localhost:9001/payment/1
+         timeWindowSecond: 1
+
+logging:
+  level:
+    com.zzs.springcloud.service.OrderService: debug

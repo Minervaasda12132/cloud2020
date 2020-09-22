@@ -1,0 +1,19 @@
+# Project exclude paths
+/alibaba-config3344/target/
+/alibaba-consumer-order-83/target/
+/alibaba-order-sentinel-consumer-84/target/
+/alibaba-payment-9001/target/
+/alibaba-payment-9011/target/
+/alibaba-sentinel-8763/target/
+/cloud-api-commons/target/
+/cloud-consumer-payment-80/target/
+/cloud-eureka-7001/target/
+/cloud-eureka-7002/target/
+/cloud-feign-order-81/target/
+/cloud-gateway-9527/target/
+/cloud-hystrix-provider-payment-8003/target/
+/cloud-provider-payment8001/target/
+/cloud-provider-payment8002/target/
+/seata-account-service2003/target/
+/seata-order-service2001/target/
+/seata-storage-service2002/target/

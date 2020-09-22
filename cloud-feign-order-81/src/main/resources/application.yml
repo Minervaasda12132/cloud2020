@@ -1,0 +1,24 @@
+server:
+  port: 81
+spring:
+  zipkin:
+    base-url: http://localhost:9411
+  sleuth:
+    sampler:
+      percentage=1
+  application:
+    name: order-client-81
+  http:
+    encoding:
+      charset: utf-8
+      force: true
+      enabled: true
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka7001.com:7001/eureka/,http://eureka7002.com:7002/eureka/
+logging:
+  level:
+    com.zzs.springcloud.service.OrderService: debug
