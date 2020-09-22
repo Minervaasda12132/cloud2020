@@ -33,7 +33,7 @@ public class OrderServiceImpl implements OrderService {
         log.info("库存结束");
         log.info("账户开始");
         accountService.updateAccount(order.getUserId(), order.getMoney());
-        log.info("账户结束");
+        log.info("账户");
         log.info("状态修改开始");
         orderDao.UpdateOrder(order.getUserId(), order.getStatus());
         log.info("状态修改结束");
