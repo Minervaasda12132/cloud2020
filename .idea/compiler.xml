@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="alibaba-consumer-order-83" />
+        <module name="cloud-eruka-7001" />
+        <module name="alibaba-sentinel-8763" />
+        <module name="cloud-api-commons" />
+        <module name="cloud-hystrix-provider-payment-8003" />
+        <module name="cloud-provider-payment8002" />
+        <module name="cloud-provider-payment8001" />
+        <module name="alibaba-order-sentinel-consumer-84" />
+        <module name="cloud-consumer-payment-80" />
+        <module name="cloud-gateway-9527" />
+        <module name="cloud-feign-order-81" />
+        <module name="alibaba-payment-9001" />
+        <module name="cloud-eureka-7002" />
+        <module name="seata-account-service2003" />
+        <module name="alibaba-payment-9011" />
+        <module name="seata-storage-service2002" />
+        <module name="seata-order-service2001" />
+        <module name="alibaba-config3344" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="alibaba-config3344" target="1.8" />
+      <module name="alibaba-consumer-order-83" target="1.8" />
+      <module name="alibaba-order-sentinel-consumer-84" target="1.8" />
+      <module name="alibaba-payment-9001" target="1.8" />
+      <module name="alibaba-payment-9011" target="1.8" />
+      <module name="alibaba-sentinel-8763" target="1.8" />
+      <module name="cloud-api-commons" target="1.8" />
+      <module name="cloud-consumer-payment-80" target="1.8" />
+      <module name="cloud-eruka-7001" target="1.8" />
+      <module name="cloud-eureka-7002" target="1.8" />
+      <module name="cloud-feign-order-81" target="1.8" />
+      <module name="cloud-gateway-9527" target="1.8" />
+      <module name="cloud-hystrix-provider-payment-8003" target="1.8" />
+      <module name="cloud-provider-payment8001" target="1.8" />
+      <module name="cloud-provider-payment8002" target="1.8" />
+      <module name="cloud2020" target="1.8" />
+      <module name="seata-account-service2003" target="1.8" />
+      <module name="seata-order-service2001" target="1.8" />
+      <module name="seata-storage-service2002" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
