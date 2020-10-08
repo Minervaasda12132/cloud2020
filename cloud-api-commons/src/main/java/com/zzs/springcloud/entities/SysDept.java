@@ -8,20 +8,22 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.math.BigDecimal;
+import java.util.Date;
 
-@Builder
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-@TableName(value = "t_order")
-public class Order {
+@Builder
+@TableName(value = "sys_dept")
+public class SysDept {
     @TableId(type = IdType.AUTO)
     private Long id;
-    private Long userId;
-    private Long productId;
-    private Integer count;
-    private BigDecimal money;
-    private Integer status;
-
+    private String name;
+    private String level;
+    private Integer seq;
+    private String remark;
+    private Long parentId;
+    private String operator;
+    private Date operateTime;
+    private String operateIp;
 }

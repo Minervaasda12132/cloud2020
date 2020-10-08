@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zzs.springcloud.dao.SysDeptDao">
+    <select id="selectChildDept" resultType="com.zzs.springcloud.entities.SysDept">
+        select *
+        from sys_dept
+        where level like #{level} || '.%'
+    </select>
+    <update id="batchUpdate" parameterType="map">
+        <foreach collection="sysDepts" item="dept" separator=";">
+            update sys_dept
+            set level = #{dept.level}
+            where id = #{dept.id}
+        </foreach>
+    </update>
+    <select id="countByNameAndParentId" parameterType="map" resultType="int">
+        select count(1)
+        from sys_dept
+                where  name = #{name}
+        <if test="parentId != null">
+            AND parent_id = #{parentId}
+        </if>
+        <if test="id != null">
+            AND id != #{id}
+        </if>
+    </select>
+</mapper>
